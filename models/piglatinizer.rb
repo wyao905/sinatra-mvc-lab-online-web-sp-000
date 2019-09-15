@@ -2,7 +2,7 @@ class PigLatinizer
   attr_accessor :text
   
   def initialize
-    @text = @input
+    @text = params[:user_phrase]
   end
   
   def piglatinize(text)
